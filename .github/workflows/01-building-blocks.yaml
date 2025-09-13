@@ -18,6 +18,6 @@ jobs:
           echo "I will fail line 1"
           echo "I will fail line 2"
           echo "I will fail line 3"
+          exit 1
       - name: say good bye
         run: echo "good bye!"
-        
