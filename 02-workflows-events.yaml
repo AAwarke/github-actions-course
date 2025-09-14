@@ -1,0 +1,17 @@
+# This workflow demonstrates how to use workflow events and outputs the event name that triggered it.
+
+name: 02 - Workflows Events
+
+on:
+  push:
+    branches:
+      - main
+  
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show the trigger
+        run: echo "The event that triggered this workflow is ${{ github.event_name }}"
+
+    
