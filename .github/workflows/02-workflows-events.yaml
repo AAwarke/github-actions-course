@@ -1,11 +1,14 @@
 # This workflow demonstrates how to use workflow events and outputs the event name that triggered it.
 
 name: 02 - Workflows Events
-
+# Triggers: push, pull_request, schedule, workflow_dispatch
 on:
-  push:
+
+  pull_request:
     branches:
       - main
+  workflow_dispatch:
+
   
 jobs:
   echo:
